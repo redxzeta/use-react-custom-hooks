@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-const useForm = <T extends Record<string, any>>(
+export const useForm = <T extends Record<string, any>>(
   initialState: T,
   submitForm: () => void
 ) => {
@@ -8,14 +8,12 @@ const useForm = <T extends Record<string, any>>(
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    setForm((f) => ({ ...f, [name]: value }));
+    setForm(f => ({ ...f, [name]: value }));
   };
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     submitForm();
   };
 
-  return { form, handleChange, onSubmit } as const;
+  return { form, handleChange, onSubmit };
 };
-
-export default useForm;
