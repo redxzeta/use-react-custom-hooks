@@ -1,3 +1,4 @@
+[![CI](https://github.com/redxzeta/use-react-custom-hooks/actions/workflows/main.yml/badge.svg?branch=edge)](https://github.com/redxzeta/use-react-custom-hooks/actions/workflows/main.yml)
 
 # Use-Custom-Simple-Hooks
 
