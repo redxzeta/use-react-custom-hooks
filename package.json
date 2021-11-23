@@ -27,13 +27,20 @@
       "pre-commit": "tsdx lint"
     }
   },
+  "keywords": [
+    "react",
+    "hooks",
+    "typescript",
+    "react-hooks",
+    "custom-hooks"
+  ],
   "prettier": {
     "printWidth": 80,
     "semi": true,
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "use-custom-simple-hooks",
+  "name": "use-simple-hooks",
   "author": "redxzeta",
   "module": "dist/use-custom-simple-hooks.esm.js",
   "size-limit": [
