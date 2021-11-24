@@ -1,24 +1,23 @@
-
 # Use-Custom-Simple-Hooks
 
 A collection of custom React hooks that could be useful
-
 
 ## Installation
 
 Install my-project with npm
 
 ```bash
-  npm install use-custom-simple-hooks
+  npm install use-simple-hooks
 
 ```
 
-Install with yarn 
+Install with yarn
 
 ```bash
-  yarn add use-custom-simple-hooks
+  yarn add use-simple-hooks
 
-```    
+```
+
 ## Features
 
 - Toggle Custom Hook
@@ -29,7 +28,7 @@ Install with yarn
 ### useForm
 
 ```javascript
-const initValue = { name: ''};
+const initValue = { name: '' };
 const App = () => {
   const [display, setDisplay] = useState(false);
   const { form, handleChange, onSubmit } = useForm(initValue, () =>
@@ -48,7 +47,7 @@ const App = () => {
         />
         <button type="submit">Submit</button>
       </form>
-          {display && <h1>Hello {form.name}</h1>}
+      {display && <h1>Hello {form.name}</h1>}
     </div>
   );
 };
@@ -68,15 +67,13 @@ const App = () => {
   );
 };
 ```
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
-
 ## Lessons Learned
 
-What did you learn while building this project? 
-
+What did you learn while building this project?
 
 Learning how to use TypeScript and publishing an npm package.
-
